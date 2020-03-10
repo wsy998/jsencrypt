@@ -1,0 +1,29 @@
+{
+  "name": "jsencrypt",
+  "version": "1.0.0",
+  "description": "一个基于CryptoJS和jsencrypt的加密库",
+  "main": "index.js",
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "jsencrypt": "^3.0.0-rc.1"
+
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wsy998/jsencrypt.git"
+  },
+  "keywords": [
+    "encrypt"
+  ],
+  "author": "wsy998",
+  "license": "MIT"
+}
