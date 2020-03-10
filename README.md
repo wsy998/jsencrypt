@@ -1,0 +1,2 @@
+# jsencrypt
+一个基于CryptoJS和jsencrypt的加密库
