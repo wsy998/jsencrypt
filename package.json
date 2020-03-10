@@ -1,0 +1,22 @@
+{
+    "name": "@wsy998/jsencrypt",
+    "version": "1.1.0",
+    "description": "一个基于CryptoJS和jsencrypt的加密库",
+    "main": "index.js",
+    "dependencies": {
+        "crypto-js": "^4.0.0",
+        "jsencrypt": "^3.0.0-rc.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wsy998/jsencrypt.git"
+    },
+    "keywords": [
+        "encrypt"
+    ],
+    "author": {
+        "name": "wsy998",
+        "email": "489402539@qq.com"
+    },
+    "license": "MIT"
+}
