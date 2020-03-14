@@ -3,7 +3,7 @@
 ##加密思路
 思路来自[https://www.zybuluo.com/octopus/note/1398009](https://www.zybuluo.com/octopus/note/1398009)
 
-##加载方式
+## 加载方式
 ### 使用AMD 方法加载
 ```js
 define(['jsencrypt'],function(encrypt){
