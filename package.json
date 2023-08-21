@@ -1,22 +1,43 @@
 {
-    "name": "@wsy998/jsencrypt",
-    "version": "1.1.2",
-    "description": "一个基于CryptoJS和jsencrypt的加密库",
-    "main": "index.js",
-    "dependencies": {
-        "crypto-js": "^4.0.0",
-        "jsencrypt": "^3.0.0-rc.1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/wsy998/jsencrypt.git"
-    },
-    "keywords": [
-        "encrypt"
-    ],
-    "author": {
-        "name": "wsy998",
-        "email": "489402539@qq.com"
-    },
-    "license": "MIT"
+  "name": "@wsy998/jsencrypt",
+  "version": "1.1.2",
+  "description": "一个基于CryptoJS和jsencrypt的加密库",
+  "main": "dist/index.umd.js",
+  "type": "module",
+  "files": ["dist"],
+  "module": "./dist/jsencrypt.es.js",
+  "types": "./lib/index.d.ts",
+  "peerDependencies": {
+    "crypto-js": "^4.1.1",
+    "jsencrypt": "^3.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wsy998/jsencrypt.git"
+  },
+  "keywords": [
+    "encrypt"
+  ],
+  "author": {
+    "name": "wsy998",
+    "email": "489402539@qq.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/crypto-js": "^4.1.1",
+    "@types/node": "18.17.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.2"
+  },
+  "scripts": {
+    "test": "vitest",
+    "build": "vue-tsc && vite build"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/jsencrypt.es.js",
+      "require": "./dist/jsencrypt.umd.js"
+    }
+  }
 }
